@@ -1,0 +1,12 @@
+# Hypixel Core Remake - Config file
+server-name: "Hypixel"
+news: "&e&lBEDWARS 1.0 &b&l+ &a&lZOMBIES (NEW PTL GAME)"
+versions: "1.8/1.9/1.10/1.11/1.12"
+website: "www.hypixel.net"
+default-lobby: "#1"
+store-website: "http://store.hypixel.net"
+report-website: "https://hypixel.net/report"
+watchdog-website: "https://www.hypixel.net/watchdog"
+watchdog-report-id: 1
+
+    
