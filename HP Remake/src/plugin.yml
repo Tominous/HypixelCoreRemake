@@ -1,0 +1,48 @@
+main: fi.torksi.hypixel.Hypixel
+name: Hypixel-Core-Remake
+description: First Java Hypixel Remake ever!
+version: 1.0
+commands:
+  msg:
+    description: Send private messages.
+  vanish:
+    description: Vanish/reveal yourself.
+  nick:
+    description: Change your name.
+  rank:
+    description: Update player's rank.
+  addxp:
+    aliases: xpadd
+    description: Change player's network level.
+  setdust:
+    description: Give a specific amount of mystery dust to player.
+  particletest:
+    description: Test particles.
+  collectibles:
+    desctiption: Open the Collectibles menu
+  achat:
+    aliases: ac
+    description: Talk in the Staff chat
+  areply:
+    aliases: ar
+    description: Reply a Staff message
+  watchdogreport:
+    aliases: wdr
+    description: Open a Watchdog report.
+  watchdogreport-claim:
+    aliases: wdrc
+    description: Claim a Watchdog report.
+  watchdogreport-reject:
+    aliases: wdrr
+    description: Reject a Watchdog report.
+  watchdogreport-accept:
+    aliases: wdra
+    description: Accept a Watchdog report.
+  gm:
+    aliases: gamemode
+    description: Change your gamemode.
+  fly:
+    description: Toggle flight.
+  r:
+    aliases: reply
+    description: Reply private messages
