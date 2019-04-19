@@ -41,7 +41,7 @@ public class Hypixel extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		
-		// Rekisteröi eventit, komennot jne.
+		// RekisterÃ¶i eventit, komennot jne.
 		registerEvents();
 		registerCommands();
 		registerConfig();
@@ -50,14 +50,14 @@ public class Hypixel extends JavaPlugin {
 		
 		
 		
-		// iDisguise API ja siihen liittyvät jutut
+		// iDisguise API ja siihen liittyvÃ¤t jutut
 		api = getServer().getServicesManager().getRegistration(DisguiseAPI.class).getProvider();
 		BukkitScheduler scheduler = getServer().getScheduler();
         scheduler.scheduleSyncRepeatingTask(this, new Runnable() {
             @Override
             public void run() {
             	for (Player p : VanishCommand.vanished) {
-            		IChatBaseComponent chatTitle = ChatSerializer.a("{\"text\":\"You are currently §cVANISHED\"}");
+            		IChatBaseComponent chatTitle = ChatSerializer.a("{\"text\":\"You are currently Â§cVANISHED\"}");
 
 					PacketPlayOutTitle title = new PacketPlayOutTitle(EnumTitleAction.ACTIONBAR, chatTitle);
 					PacketPlayOutTitle length = new PacketPlayOutTitle(0, 240, 0);
@@ -67,7 +67,7 @@ public class Hypixel extends JavaPlugin {
 					((CraftPlayer) p).getHandle().playerConnection.sendPacket(length);
     			}
             	for (Player p : NickCommand.nicked) {
-            		IChatBaseComponent chatTitle = ChatSerializer.a("{\"text\":\"You are currently §cNICKED\"}");
+            		IChatBaseComponent chatTitle = ChatSerializer.a("{\"text\":\"You are currently Â§cNICKED\"}");
 
 					PacketPlayOutTitle title = new PacketPlayOutTitle(EnumTitleAction.ACTIONBAR, chatTitle);
 					PacketPlayOutTitle length = new PacketPlayOutTitle(0, 240, 0);
@@ -96,7 +96,7 @@ public class Hypixel extends JavaPlugin {
 		getCommand("rank").setExecutor(new RankCommand());
 		getCommand("addxp").setExecutor(new AddXpCommand());
 		getCommand("xpadd").setExecutor(new AddXpCommand());
-		//getCommand("deldust").setExecutor(new DelDustCommand());
+		getCommand("deldust").setExecutor(new DelDustCommand());
 		getCommand("setdust").setExecutor(new AddDustCommand());
 		getCommand("particletest").setExecutor(new ParticleTestCommand());
 		getCommand("collectibles").setExecutor(new CollectiblesCommand());
